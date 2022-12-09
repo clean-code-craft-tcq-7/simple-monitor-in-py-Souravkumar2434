@@ -14,4 +14,5 @@ def battery_is_ok(temperature, soc, charge_rate):
   print_results(temperature_check, soc_check, charge_rate_check)
   if(temperature_check and soc_check and charge_rate_check):
     Battery_check= True
+  return Battery_check
 
