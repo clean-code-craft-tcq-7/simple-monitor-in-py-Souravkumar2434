@@ -1,16 +1,8 @@
 from check_soc import check_soc
 from check_temperature import check_temperature
 from check_charge_rate import check_charge_rate
-#from print_results import print_results
+from print_results import print_results
 
-
-def print_results(Temperature_check, soc_check, charge_rate_check):
-  if not (Temperature_check):
-    print('Temperature is out of range!')
-  if not (soc_check):
-    print('State of Charge is out of range!')
-  if not(charge_rate_check):
-    print('Charge rate is out of range!')
     
 
 
