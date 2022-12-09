@@ -7,3 +7,5 @@ def print_results(Temperature_check, soc_check, charge_rate_check):
   if not(charge_rate_check):
     print('Charge rate is out of range!')
     
+print_results(temperature_check, soc_check, charge_rate_check)
+    
