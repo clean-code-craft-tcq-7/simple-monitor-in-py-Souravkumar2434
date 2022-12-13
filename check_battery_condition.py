@@ -1,10 +1,6 @@
 from check_soc import check_soc
 from check_temperature import check_temperature
 from check_charge_rate import check_charge_rate
-from print_results import print_results
-
-    
-
 
 def battery_is_ok(temperature, soc, charge_rate):
   Battery_check = False
