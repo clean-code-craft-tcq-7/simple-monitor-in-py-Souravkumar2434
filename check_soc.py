@@ -1,6 +1,7 @@
 
 def check_soc(soc):
-    soc_check = True
     if soc < 20 or soc > 80:
-       soc_check =  False
-    return soc_check
+        print("State of charge of battery is not OK!")
+        return False
+    print("State of charge of battery is OK!")
+    return True
