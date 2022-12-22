@@ -35,6 +35,8 @@ We will explore the charging phase of Li-ion batteries to start with.
 1. To treat, we need to know the abnormal vital and the breach -
 whether high or low. Add this capability.
 1. Add the ability to plug-in different reporters to this code.
+1. Add the functionality of 1 more language
+1. Add the functionality of adding the warning feature.
 
 ## The Exploration
 
