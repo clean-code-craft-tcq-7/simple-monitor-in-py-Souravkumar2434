@@ -35,8 +35,10 @@ def check_soc_warning(soc):
     low_warning_thd = MINIMUM_THRESHOLD_FOR_SOC + warning_thd
     high_warning_thd = MAXIMUM_THRESHOLD_FOR_SOC - warning_thd
     
-    if ((soc < low_warning_thd) and (soc > MINIMUM_THRESHOLD_FOR_SOC)\
-        or (soc < MAXIMUM_THRESHOLD_FOR_SOC) and (soc > high_warning_thd)):
+    if(boundary_condition_check(soc, low_warning_thd, MINIMUM_THRESHOLD_FOR_SOC) \
+       or boundary_condition_check(soc, MAXIMUM_THRESHOLD_FOR_SOC, high_warning_thd)):
+    # if ((soc < low_warning_thd) and (soc > MINIMUM_THRESHOLD_FOR_SOC)\
+    #     or (soc < MAXIMUM_THRESHOLD_FOR_SOC) and (soc > high_warning_thd)):
         print_msg(False, 'SOC', 'WARNING')
         return
     #print_msg(False, 'Temperature', 'WARNING')
