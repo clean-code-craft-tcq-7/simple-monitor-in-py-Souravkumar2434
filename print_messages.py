@@ -4,11 +4,11 @@ Created on Wed Dec 21 17:06:45 2022
 
 @author: PGS2KOR
 """
-import take_input_for_language as tl
+#import take_input_for_language as tl
 
 
 global LANGUAGE
-LANGUAGE = tl.language
+LANGUAGE = 'ENGLISH'#tl.language
 
 
 def print_in_English(flag, *args):
